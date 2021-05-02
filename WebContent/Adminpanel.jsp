@@ -15,7 +15,7 @@
                 <h1 class="Logo">SBAHIA</h1>
                <nav>
                    <ul>
-                      <li> <a href="Deconnexion">Sign up</a></li>
+                      <li> <a href="Deconnexion">Deconnexion</a></li>
                    </ul>
                </nav>
             </div>
@@ -26,13 +26,6 @@
     <div class="main_container">
 
         <div class="container admin">
-            <div class="search">
-            <form class="form-search" action="search.test" method="Get">
-                <input type="text" name="motCle" class="search-txt"/>
-                <input type="submit" class="btn-search" value="Search"/>
-            </form>
-                <a type="submit" class="btn-Add" href="Add_product.test"><i><img src="img/Add.png"></i>Add</a>
-                </div>
             <div class="row">
                 <table class="table table-striped table-bordered">
                 <thead>

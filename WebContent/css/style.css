@@ -13,6 +13,10 @@ header{
     height: 46px;
     margin-top: -20px;
 }
+#menu_column{
+	display: flex;
+    float: right;
+}
 .header_groupe{
     height:12px;
     display: flex;

@@ -43,6 +43,23 @@
     <servlet-name>Test_4</servlet-name>
     <url-pattern>/Deconnexion</url-pattern>
   </servlet-mapping>
+   <servlet>
+    <servlet-name>Test_6</servlet-name>
+    <servlet-class>web.ControllerMappings</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>Test_6</servlet-name>
+    <url-pattern>/Reservation</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+    <servlet-name>Test_7</servlet-name>
+    <servlet-class>web.ControllerMappings</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>Test_7</servlet-name>
+    <url-pattern>/Add_Reservation</url-pattern>
+  </servlet-mapping>
         <servlet>
     <servlet-name>Test_5</servlet-name>
     <servlet-class>web.ControllerGestionProduct</servlet-class>

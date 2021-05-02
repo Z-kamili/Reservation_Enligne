@@ -14,5 +14,6 @@ public interface IReservationDao {
 	public Reservation getProduct(int id);
 	public List<Reservation> getAllReservation();
 	public List<Reservation> getAllReservation_false();
+	public List<Reservation> getAllReservationAccpet(int id) throws SQLException;
 
 }

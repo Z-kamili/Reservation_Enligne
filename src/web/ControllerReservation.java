@@ -63,44 +63,6 @@ public class ControllerReservation extends HttpServlet {
 				System.out.println(e.getMessage());
 			}
 		}
-	/*	String path = request.getServletPath();
-	  if(path.equals("/Add_product.test")){
-		  
-		  request.getRequestDispatcher("Add_product.jsp").forward(request,response);
-		  
-	  }else if(path.equals("/Delete.test")){
-			System.out.println("hello");
-			int id =  Integer.parseInt(request.getParameter("id"));
-			try {
-				Prd.deleteProduct(id);
-				response.sendRedirect("search.test?motCle=");
-			}catch(SQLException e) {
-				request.getRequestDispatcher("Adminpanel.jsp").forward(request,response);
-			}*/
-
-	/*	}else if(path.equals("/search.test")){
-			String motCle = request.getParameter("motCle");
-			try {
-				List<Reservation> product = Prd.PriductParMC("%" +motCle+ "%");
-				List<String> imagelist = new ArrayList<String>();
-				for (Reservation p : product) {
-					//byte[] imageBytes = p.getImage();
-					/*System.out.println(imageBytes);
-					imagelist.add(Base64.getEncoder().encodeToString(imageBytes));*/
-			/*	}
-				request.setAttribute("images",imagelist);
-				request.setAttribute("product",product);
-				request.getRequestDispatcher("Adminpanel.jsp").forward(request,response);
-			}catch(SQLException e) {
-				System.out.println(e.getMessage());
-				request.getRequestDispatcher("Adminpanel.jsp").forward(request,response);	
-			}
-		}else if(path.equals("/Edit.test")){			
-			ControllerProduct.id =  Integer.parseInt(request.getParameter("id"));
-			Product p = Prd.getProduct(id);
-			request.setAttribute("product",p);
-			request.getRequestDispatcher("update_product.jsp").forward(request,response);
-		}*/
 	}
 
 	/**

@@ -14,8 +14,10 @@
             <div class="header_groupe">
                     <h1 class="Logo">SBAHIA</h1>
                    <nav>
-                       <ul>
-                           <li> <a href="Deconnexion">Sign up</a></li>
+                       <ul id="menu_column">
+                           <li> <a href="Reservation">My reservation</a> </li>
+                            <li> <a href=Add_Reservation>Add Reservation</a> </li>
+                           <li> <a href="Deconnexion">Deconnexion</a></li> 
                        </ul>
                    </nav>
                 </div>

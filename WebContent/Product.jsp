@@ -15,9 +15,11 @@
         <div class="header_groupe">
                 <h1 class="Logo">SBAHIA</h1>
                <nav>
-                   <ul>
-                      <li> <a href="Deconnexion">Deconnect</a></li>
-                   </ul>
+                       <ul id="menu_column">
+                           <li> <a href="Reservation">My reservation</a> </li>
+                            <li> <a href=Add_Reservation>Add Reservation</a> </li>
+                           <li> <a href="Deconnexion">Deconnexion</a></li> 
+                       </ul>
                </nav>
         </div>
 
@@ -27,18 +29,13 @@
     <section>
   <!-- <p>${sessionScope.sessionUtilisateur.email}</p> -->  
         <div class="Container">
-         <c:forEach items="${product}" var="p" varStatus="status">
+         <c:forEach items="${rsv}" var="p">
             <div class="card">
                 <div class="card-div">
-            
-                    <div class="img_prdt">
-                        <img src="data:image/*;base64,${images[status.index]}">
-                    </div>
-                    <div class="Desc"> ${p.title}</div>
-                    <div class="Desc"> ${p.prix}DH</div>
-                    <div>${num_vote[status.index]} <i><img src="img/Icon-heart.png"></i></div>
-                    <p></p>
-                   <div class="btn-add"><a href="Add_Fav.test_2?id=${p.id}">Favorite</a></div> 
+                    <div class="Desc">${p.getEmail()}</div>
+                    <div class="Desc"> ${p.getDesc()}</div>
+                    <div> ${p.getDate_reservation()}</div>
+                   <div class="btn-add"><a >Reservation</a></div> 
                 </div>
             </div>
          </c:forEach>
